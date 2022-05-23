@@ -5,6 +5,14 @@ public class CommissionEmployee extends Employee implements Displayable {
 	// Fields
 	private double GrossSales, CommissionRate;
 	
+	// Constructor
+	public CommissionEmployee(String name, String address, int sSN, Gender sex, double grossSales,
+			double commissionRate) {
+		super(name, address, sSN, sex);
+		GrossSales = grossSales;
+		CommissionRate = commissionRate;
+	}
+
 	// Setters & Getters
 	public double getGrossSales() {
 		return GrossSales;

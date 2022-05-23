@@ -7,6 +7,20 @@ public class HourlyEmployee extends Employee implements Displayable {
 	private double HourRate;
 	private int NoOfHours;
 	
+	// Constructors
+	public HourlyEmployee() {
+		
+	}
+	
+	public HourlyEmployee(String name, String address, int sSN, Gender sex, double hourRate, int noOfHours) {
+		super(name, address, sSN, sex);
+		HourRate = hourRate;
+		NoOfHours = noOfHours;
+	}
+
+
+
+
 	// Setters & Getters
 	public double getHourRate() {
 		return HourRate;

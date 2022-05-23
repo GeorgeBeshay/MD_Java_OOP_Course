@@ -2,6 +2,12 @@ package revision;
 
 public class BasePlusCommissionEmployee extends CommissionEmployee{
 	
+	public BasePlusCommissionEmployee(String name, String address, int sSN, Gender sex, double grossSales,
+			double commissionRate) {
+		super(name, address, sSN, sex, grossSales, commissionRate);
+		// TODO Auto-generated constructor stub
+	}
+
 	// Fields
 	private double base;
 	
